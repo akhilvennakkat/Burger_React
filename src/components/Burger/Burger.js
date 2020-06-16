@@ -1,5 +1,4 @@
 import React from 'react';
-import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import classes from './Burger.css';
 const burger = (props) => {
@@ -13,7 +12,7 @@ const burger = (props) => {
         }).reduce((arr,el)=>{
             return arr.concat(el);
         },[]);
-        if(transformedIngredients.length==0)
+        if(transformedIngredients.length===0)
         transformedIngredients='Please start adding ingredients';
 
     return (
